@@ -1,0 +1,124 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --body-bg-color: hsl(30, 38%, 92%);
+    --component-bg-color: hsl(0, 0%, 100%);
+    --text-p-color: hsl(228, 12%, 48%);
+    --text-productName: hsl(212, 21%, 14%);
+    --price-grennColor: hsl(158, 36%, 37%);
+}
+
+body{
+    background: var(--body-bg-color);
+    font-size: 14px;
+    height: 100vh;
+    display: flex;
+    margin-top: 10vh;
+    align-items: center;
+    flex-direction: column;
+}
+
+.component{
+    background: var(--component-bg-color);
+    width: 50vw;
+    height: 70vh;
+    border-radius: 3%;
+    overflow: hidden;
+    display: flex;
+}
+
+/* IMAGE */
+
+.component__imgContainer{
+    width: 25vw;
+    background-image: url(../images/image-product-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* DESCRIPTION */
+
+.component__description{
+   width: 25vw;
+   margin: 0 auto;
+   padding: 0 2em;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+
+.component__description__productType{
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .5em;
+    color: var(--text-p-color);
+    margin-bottom: 5%;
+}
+
+.component__description__productName{
+    font-family: 'Fraunces', serif;
+    color: var(--text-productName);
+    margin-bottom: 10%;
+}
+
+.component__description__productDescription{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: var(--text-p-color);
+    margin-bottom: 10%;
+}
+
+/* PRICE */
+
+.component__description__containerPrice{
+    display: flex;
+    margin-bottom: 10%;
+    align-items: center;
+}
+
+.component__description__containerPrice__realPrice{
+    font-family: 'Fraunces', sans-serif;
+    color: var(--price-grennColor);
+    font-size: 2em;
+    margin-right: .5em;
+}
+
+.component__description__containerPrice__fakePrice{
+    color: var(--text-p-color);
+    text-decoration: line-through;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 12%;
+    width: 100%;
+    background: var(--price-grennColor);
+    cursor: pointer;
+    border-radius: .5em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: var(--component-bg-color);
+    outline: none;
+}
+
+.button__containerImg{
+    margin-right: 1em;
+}
+
+/* ATRIBUTION */
+
+.attribution {
+    margin-top: 1em;
+    font-size: 30px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
