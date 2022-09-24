@@ -15,17 +15,19 @@
 body{
     background: var(--body-bg-color);
     font-size: 14px;
-    height: 100vh;
     display: flex;
     margin-top: 10vh;
     align-items: center;
+    align-items: center;
+    flex-flow: wrap;
+    align-content: center;
     flex-direction: column;
 }
 
 .component{
     background: var(--component-bg-color);
     width: 50vw;
-    height: 70vh;
+    height: 35em;
     border-radius: 3%;
     overflow: hidden;
     display: flex;
@@ -39,6 +41,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    background-size: 100%;
 }
 
 /* DESCRIPTION */
@@ -46,10 +49,10 @@ body{
 .component__description{
    width: 25vw;
    margin: 0 auto;
-   padding: 0 2em;
+   padding: 5%;
    display: flex;
    flex-direction: column;
-   justify-content: space-evenly;
+   justify-content: space-around;
 }
 
 .component__description__productType{
@@ -64,12 +67,14 @@ body{
     font-family: 'Fraunces', serif;
     color: var(--text-productName);
     margin-bottom: 10%;
+    padding-right: 30%;
 }
 
 .component__description__productDescription{
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     color: var(--text-p-color);
+    padding-right: 15%;
     margin-bottom: 10%;
 }
 
@@ -85,7 +90,7 @@ body{
     font-family: 'Fraunces', sans-serif;
     color: var(--price-grennColor);
     font-size: 2em;
-    margin-right: .5em;
+    margin-right: .668em;
 }
 
 .component__description__containerPrice__fakePrice{
@@ -97,7 +102,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 12%;
+    height: 4em;
     width: 100%;
     background: var(--price-grennColor);
     cursor: pointer;
