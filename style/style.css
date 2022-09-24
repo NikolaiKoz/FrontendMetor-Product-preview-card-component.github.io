@@ -41,7 +41,6 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-size: 100%;
 }
 
 /* DESCRIPTION */
@@ -67,15 +66,25 @@ body{
     font-family: 'Fraunces', serif;
     color: var(--text-productName);
     margin-bottom: 10%;
-    padding-right: 30%;
 }
 
 .component__description__productDescription{
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     color: var(--text-p-color);
-    padding-right: 15%;
     margin-bottom: 10%;
+}
+
+@media screen and (min-width: 1440px) {
+
+    .component__description__productName{
+        padding-right: 30%;
+    }
+
+    .component__description__productDescription{
+        padding-right: 15%;
+    }
+
 }
 
 /* PRICE */
@@ -127,3 +136,70 @@ body{
 .attribution a {
     color: hsl(228, 45%, 44%);
 }
+
+/* TABLED */
+
+@media screen and (max-width: 880px) {
+
+    body{
+        margin-top: 5vh;
+    }
+
+    .component{
+        flex-direction: column;
+        height: 80vh;
+        width: 95vw;
+    }
+
+    .component__imgContainer{
+        height: 50vh;
+        width: 100%;
+        background-position-y: 30%;
+    }
+
+    .component__description{
+        height: 40vh;
+        width: auto;
+        justify-content: center;
+    }
+
+    .component__description__productType,
+    .component__description__productDescription{
+        margin-bottom: 1em;
+    }
+
+    .component__description__productName,
+    .component__description__containerPrice{
+        margin-bottom: 1.5em;
+    }
+
+}
+/* MOBILE */
+
+@media screen and (max-width: 400px) {
+
+    .button__containerImg{
+        background-image: url(../images/image-product-mobile.jpg);
+    }
+
+    .component__description__productName,
+    .component__description__containerPrice{
+        margin-bottom: .668em;
+    }
+
+    .component__description__productDescription,
+    .component__description__containerPrice{
+        margin-bottom: 1em;
+    }
+
+    .component__description__productName,
+    .component__description__productDescription{
+        padding-right: 1em;
+    }
+
+    .button__containerImg{
+        background: transparent;
+    }
+
+}
+
