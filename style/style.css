@@ -49,7 +49,7 @@ body{
    padding: 0 2em;
    display: flex;
    flex-direction: column;
-   justify-content: center;
+   justify-content: space-evenly;
 }
 
 .component__description__productType{
